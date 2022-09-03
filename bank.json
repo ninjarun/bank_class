@@ -1,20 +1,26 @@
 [
     {
-        "name": "x",
-        "id": "2",
-        "balance": 500,
-        "type": "Premium"
-    },
-    {
-        "name": "b",
-        "id": "3",
-        "balance": 1000,
-        "type": "Vip"
-    },
-    {
-        "name": "z",
+        "name": "wqwe",
         "id": "1",
         "balance": 0,
         "type": "Regular"
+    },
+    {
+        "name": "dasds",
+        "id": "2",
+        "balance": 5000,
+        "type": "Regular"
+    },
+    {
+        "name": "ewqeq",
+        "id": "3",
+        "balance": 4000,
+        "type": "Vip"
+    },
+    {
+        "name": "ewqeqe",
+        "id": "4",
+        "balance": 50000,
+        "type": "Premium"
     }
 ]

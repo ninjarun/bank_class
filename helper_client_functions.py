@@ -7,7 +7,6 @@ def client_menu(clients_list):
     if client_select==ClientActions.DEPOSIT.value:ClientDeposite(clients_list)
     if client_select==ClientActions.WITHDRAW.value:Withdraw(clients_list)
     if client_select==ClientActions.GET_BALANCE.value:GetBalance(clients_list)
-    # if client_select==ClientActions.GO_BACK.value:MM_menu(clients_list)
 
 def ClientDeposite(clients_list):
     chk_id=input('to what id would you like to deposite? ')
@@ -21,11 +20,11 @@ def Withdraw(clients_list):
     amount=int(input('how much would you like to withdraw?'))
     for client in clients_list:
         if chk_id==client.id:
-            if client.balance-amount > 0 and client.type=='Regular':
+            if client.balance-amount >= 0 and client.type=='Regular':
                 client.balance-=amount
-            elif client.balance-amount > -2000 and client.type=='Premium':
+            elif client.balance-amount >= -2000 and client.type=='Premium':
                 client.balance-=amount
-            elif client.balance-amount > -2500 and client.type=='Vip':
+            elif client.balance-amount >= -2500 and client.type=='Vip':
                 client.balance-=amount
             else:print('no money buddy!')
             print(client.balance)
